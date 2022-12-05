@@ -1,12 +1,11 @@
 const fs = require("fs");
-const { EOL } = require("os");
 
-function getFileLines(fileName) {
+function getFile(fileName) {
   return fs.readFileSync(fileName, { encoding: "utf8", flag: "r" }).split("\n");
 }
 
 function findMostCalories(fileName) {
-  const file = getFileLines(fileName);
+  const file = getFile(fileName);
   const fileLen = file.length;
   let sum = 0;
   let sumMax = 0;
