@@ -51,4 +51,4 @@ function getSumOfPriorities(fileName) {
   return sumOfProperties;
 }
 
-console.log(getSumOfPriorities("test.txt"));
+console.log(getSumOfPriorities("data.txt"));
